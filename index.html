@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Project Main Page</title>
+        
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="css/style.css">
+        
+        <script src="js/jquery-3.7.0.min.js"></script>
+        
+        <script src="js/slider.js"></script>
+        
+        <script src="js/main.js"></script>
+        
+
+    </head>
+    
+    <body>
+        <header>
+            <div class="container">
+                <div class="top"> 
+                    <div class="toggle"> 
+                        <div class="stars">
+                          <div class="star"></div>
+                          <div class="star"></div>
+                          <div class="star"></div>
+                          <div class="star"></div>
+                          <div class="star"></div>
+                          <div class="star"></div>
+                          <div class="star"></div>
+                          <div class="star"></div>
+                        </div>
+                        <!--<div class="clouds">
+                          <div class="cloud-front">
+                            <div class="cloud-piece"></div>
+                             <div class="cloud-piece"></div>
+                            <div class="cloud-piece"></div>
+                            <div class="cloud-piece"></div>
+                            <div class="cloud-piece"></div>
+                          </div>
+                          <div class="cloud-back">
+                            <div class="cloud-piece"></div>
+                            <div class="cloud-piece"></div>
+                            <div class="cloud-piece"></div>
+                            <div class="cloud-piece"></div>
+                            <div class="cloud-piece"></div>
+                          </div>
+                        </div>-->
+                        <div class="slideable-area">
+                          <div class="sphere">
+                            <div class="sphere-bg-wrapper">
+                              <div class="sun"></div>
+                              <div class="moon">
+                                <div class="moon-crater"></div>
+                                <div class="moon-crater"></div>
+                                <div class="moon-crater"></div>
+                              </div>          
+                            </div>
+                            <div class="sphere glow"></div>
+                            <div class="sphere glow"></div>
+                            <div class="sphere glow"></div>
+                          </div>
+                        </div>
+                      </div> 
+                </div>
+                <div class="middle">
+                    <h1 class="site_title">"Crazy Marine"</h1>
+                    <p class="specification">Приветствую тебя на первом (если считать с конца) сайте, по продаже рыб и кораллов в твой великолепный морской аквариум!</p>
+                </div>
+                <nav class="topmenu">
+                    <a class="home current" href="index.html"><span>Главная</span></a>
+                    <a class="catalog" href="catalog.html"><span>Каталог</span></a>
+                    <a class="product" href="product.html"><span>Товар</span></a>
+                    <a class="order" href="order.html"><span>Корзина</span></a>
+                    <a class="contacts" href="contacts.html"><span>Контакты</span></a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="action">
+                <div class="actiontext">До нового года осталось:
+                    <div class="actiontimer" data-actionend="2023-12-31T23:59:59">
+                        <!-- <b>0</b>дней<b>0</b>часов<b>00</b>минут<b>00</b><span>секунд</span> -->
+                    </div>
+                </div>
+            </section>
+            <section class="content">
+                <h2>Знакомьтесь! Наша дружная команда:</h2>
+                <div class="doska_pocheta">
+                    <div class="worker">
+                        <img class="worker_img" src="images/fish_1.jpg" alt="first image">
+                        <span class="worker_name">Серёга</span>
+                        <span class="worker_resum">Самый опытный в нашем коллективе. В основном только он и работает ¯\_(ツ)_/¯</span>
+                    </div>
+                    <div class="worker">
+                        <img class="worker_img" src="images/fish_2.jpg" alt="second image">
+                        <span class="worker_name">Царь Тритон</span>
+                        <span class="worker_resum"> Наш Генеральный директор. На самом деле его зовут Пётр. Всегда так улыбается.</span>
+                    </div>
+                    <div class="worker">
+                        <img class="worker_img" src="images/fish_3.jpg" alt="third image">
+                        <span class="worker_name" id="gb">Алевтина Петровна</span>
+                        <span class="worker_resum">Главный бухгалтер. Душа нашей компании.</span>
+                    </div>
+                    <div class="worker">
+                        <img class="worker_img" src="images/fish_4.jpg" alt="fourth image">
+                        <span class="worker_name">Андрюша</span>
+                        <span class="worker_resum">Сын <s>генерального директора</s> маминой подруги.</span>
+                    </div>
+                </div>
+                <div class="content_text">Мы - профессионалы в своем деле, лучшие из лучших. Переходи в каталог товаров, кидай в корзину всё что понравилось, жми "Купить" и Серёга с тобой свяжется со скоростью морского огурца.</div>
+            </section>
+            <section class="slider" id="slider1" data-time="3000">
+                <div class="sliderwindow_padding"></div>
+                <div class="sliderwindow">
+                    <img class="slide" src="images/zoantus_1.jpg" alt="first image">
+                    <img class="slide" src="images/zoantus_2.png" alt="second image">
+                    <img class="slide" src="images/zoantus_3.jpg" alt="third image">
+                    <img class="slide" src="images/Scolimia.jpg" alt="fourth image">
+                </div>
+                <div class="slidercontrols">
+                    <button type="button" class="prev">&#xe905;</button>
+                    <button type="button" class="next">&#xe906;</button>
+                    <div class="pointers">
+                        <!-- <span></span> -->
+                        <!-- <span></span> -->
+                        <!-- <span></span> -->
+                        <!-- <span></span> -->
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="container">
+                <div class="top"></div>
+                <nav class="bottommenu">
+                    <a class="current" href="index.html">Главная</a>
+                    <a class="catalog" href="catalog.html"><span>Каталог</span></a>
+                    <a class="product" href="product.html"><span>Товар</span></a>
+                    <a class="order" href="order.html"><span>Корзина</span></a>
+                    <a class="contacts" href="contacts.html"><span>Контакты</span></a>
+                </nav>
+                <p class="copy">&copy; Баттелфилд Овервотч, 2023 год.</p>
+            </div>
+        </footer>
+        <script>
+            const sliderBgEle = document.querySelector('.toggle');
+            const starsEle = document.querySelector('.stars');
+            const sphereEle = document.querySelector('.sphere');
+            const moonEle = document.querySelector('.moon');
+            const cloudsEle = document.querySelector('.clouds');
+            
+            sliderBgEle.addEventListener('click', () => {
+            sliderBgEle.classList.toggle('night');
+            starsEle.classList.toggle('active');
+            sphereEle.classList.toggle('night');
+            moonEle.classList.toggle('night');
+            //cloudsEle.classList.toggle('active'); это отключенные облака
+            });
+        </script>
+        <script>
+        // Выбираем кнопку
+        const btn = document.querySelector(".toggle");
+        // Отслеживаем щелчок по кнопке
+        btn.addEventListener("click", function () {
+        // Затем переключаем (добавляем/удаляем) класс .dark-theme для body
+        document.body.classList.toggle("topmenu_darktheme");
+        });
+        </script>      
+    </body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Project Product Page</title>
+        
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="css/style.css">
+        
+        <script src="js/jquery-3.7.0.min.js"></script>
+        
+        <script src="js/gallery.js"></script>
+        
+        <script src="js/main.js"></script>
+        
+        <script>
+            
+        </script>
+    </head>
+    
+    <body>
+        <header>
+            <div class="container">
+                <div class="top"></div>
+                <div class="middle">
+                    <h1 class="site_title">"Crazy Marine"</h1>
+                    <p class="specification">Приветствую тебя на первом (если считать с конца) сайте, по продаже рыб и кораллов в твой великолепный морской аквариум!</p>
+                </div>
+                <nav class="topmenu">
+                    <a class="home" href="index.html"><span>Главная</span></a>
+                    <a class="catalog" href="catalog.html"><span>Каталог</span></a>
+                    <a class="product current" href="product.html"><span>Товар</span></a>
+                    <a class="order" href="order.html"><span>Корзина</span></a>
+                    <a class="contacts" href="contacts.html"><span>Контакты</span></a>
+                </nav>
+            </div>
+        </header>
+        
+        <main class="product idtovar" data-tovarid="789">
+            <section class="container">
+                <div class="pics">
+                    <div class="mainimagedesk">
+                        <img src="images/Klawn_mid.jpg" alt="main image">
+                    </div>
+                    
+                    <div class="gallery">
+                        <div class="gal_btn left disabled">&lt;</div>
+                        
+                        <div class="gal_window">
+                            <div class="gal_rail">
+                                <!-- <img src="images/Klawn_small.jpg" alt="Klawn" data-image="images/Klawn_mid.jpg"> -->
+                                <img src="images/Klawn_small.jpg" alt="Klawn" data-image="images/Klawn_mid.jpg">
+                                <!-- <img src="images/Klawn2_small.jpg" alt="Klawn" data-image="images/Klawn2_mid.jpg"> -->
+                                <img src="images/Klawn2_small.jpg" alt="Klawn" data-image="images/Klawn2_mid.jpg">
+                                <!-- <img src="images/derevo_small.jpg" alt="derevo" data-image="images/derevo_mid.jpg"> -->
+                                <img src="images/Klawn_3_small.jpg" alt="оцеллярис" data-image="images/Klawn_3_mid.jpg">
+                                <img src="images/Klawn_4_small.jpg" alt="оцеллярис" data-image="images/Klawn_4_mid.jpg">
+                                <img src="images/Klawn_5_small.jpg" alt="оцеллярис" data-image="images/Klawn_5_mid.jpg">
+                                <img src="images/Klawn_3_small.jpg" alt="оцеллярис" data-image="images/Klawn_3_mid.jpg">
+                                <img src="images/Klawn_4_small.jpg" alt="оцеллярис" data-image="images/Klawn_4_mid.jpg">
+                                <img src="images/Klawn_5_small.jpg" alt="оцеллярис" data-image="images/Klawn_5_mid.jpg">
+                            </div>
+                        </div>
+                        
+                        <div class="gal_btn right">&gt;</div>
+                    </div>
+                </div>
+                
+                <div class="buy">
+                    <h1 class="tovarname">Клоун оцеллярис</h1>
+                    <p class="price">2000</p>
+                    <p>Обитают в восточной части Индийского океана и западной части Тихого океана. Живут в симбиозе с актиниями. Когда клоун выбирает в качестве укрытия актинию или подходящий коралл, например ганиопору, он будет яростно защищать свой "домик" от вторжения непрошенных гостей и запросто может оттяпать вам палец...шутка, палец не отгрызёт, но больно укусить - запросто может.</p>
+                    <button type="button" class="buy_button">КУПИТЬ</button>
+                </div>
+                
+                <div class="info">
+                   <!-- <h2>Дополнительная информация</h2>
+                    <p>Здесь размещаем подробное описание товара и всякие его характеристики, а также прочее разное.</p> -->
+                    <div class="characters">
+                        <div class="tab">
+                            <button class="tablinks" onclick="openTab(event, 'Conditions')">Условия содержания</button>
+                            <button class="tablinks" onclick="openTab(event, 'Food')">Кормление</button>
+                            <button class="tablinks" onclick="openTab(event, 'Compatibility')">Совместимость</button>
+                            <button class="tablinks" onclick="openTab(event, 'Review')">Отзывы</button>
+                        </div>
+                        
+                        <!-- Tab content -->
+                        <div id="Conditions" class="tabcontent">
+                            <h3>Условия содержания</h3>
+                            <p>Аквариум от 80л на пару. Осцеллярисы являются территориальными рыбами, агрессивны к другим клоунам, могут пощипывать других рыбок, даже более крупных. Они хорошо привыкают к человеку и со временем могут стать совершенно ручными. Данный вид клоунов хорошо размножается в неволе, и такие рыбки предпочтительнее пойманных на коралловых рифах: они легко приспосабливаются к аквариумным условиям и реже болеют, в то время как пойманные в природе тяжело адаптируются и могут нести целый букет паразитов и других инфекций.</p>
+                        </div>
+
+                        <div id="Food" class="tabcontent">
+                            <h3>Кормление</h3>
+                            <p>Питается зоопланктоном, мелкорубленым мясом морепродуктов, артемией, замороженными и сухими качественными кормами. Кормить можно один раз в день, но ни в коем случае не перекармливать. Этот вид клоунов хорошо уживается с другими видами соразмерных рыб и с беспозвоночными. Они идеальные жители рифового аквариума.</p>
+                        </div>
+                        
+                        <div id="Compatibility" class="tabcontent">
+                            <h3>Совместимость</h3>
+                            <p>Уживается с большинством рыб. Подходит для рифа</p>
+                        </div>
+                        
+                        <div id="Review" class="tabcontent">
+                            <h3>Отзывы восторженных покупателей:</h3>
+                            <p>-Класс! Только кусаются.</p>
+                            <p>-У меня живет пара, мне нраицца.</p>
+                            <p>-Вяленый под пиво норм...</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            
+            <footer>
+                <div class="container">
+                    <div class="top"></div>
+                    <nav class="bottommenu">
+                        <a class="home" href="index.html"><span>Главная</span></a>
+                        <a class="catalog" href="catalog.html"><span>Каталог</span></a>
+                        <a class="product current" href="product.html"><span>Товар</span></a>
+                        <a class="order" href="order.html"><span>Корзина</span></a>
+                        <a class="contacts" href="contacts.html"><span>Контакты</span></a>
+                    </nav>
+                    <p class="copy">&copy; Баттелфилд Овервотч, 2023 год.</p>
+                </div>
+                
+        <script>
+            function openTab(evt, tabName) {
+            // Declare all variables
+            let i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+            }
+        </script>
+    </body>
+</html>
